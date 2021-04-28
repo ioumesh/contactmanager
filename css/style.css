@@ -33,9 +33,6 @@
 }
 .contact_form{
 padding:0 20px;
-display:flex;
-justify-content:center;
-align-items:center; 
 }
 .contact_form input{
     color:#fff;
@@ -51,9 +48,7 @@ align-items:center;
 .contact_form .btn[type="submit"] {
     border:2px solid #0086FE;
     border-radius:20px;
-    padding:10px 10px;
-    align-items:center;
-
+    padding:10px 20px;
 }
 input:focus{
     outline:none;
@@ -69,4 +64,16 @@ input:focus{
   
   ::-ms-input-placeholder { /* Microsoft Edge */
     color:#fff;
+  }
+
+  .contact_body{
+
+      padding:10px 15px;
+  }
+  .contact_item{
+      background-color: #fff;
+      padding:10px 15px;
+      border-radius:3px;
+      box-shadow:0px 0px 20px 3px rgba(0, 0, 0, 0.2 );
+
   }

@@ -11,7 +11,7 @@ for(i=0; i<contacts.length; i++){
                         <h4>${contacts[i].name}</h4>
                         <p>${contacts[i].number}</p>
                     </div>
-                    <i class="fa fa-times-circle color-primary" aria-hidden="true" onclick="deletecontact(${contacts[i].id})"></i>
+                    <i  class="fa fa-times-circle color-primary" aria-hidden="true" onclick="deletecontact('${contacts[i].id}')"></i>
                 </div>  
        `
 }
@@ -21,9 +21,10 @@ function submitcontact(event){
     var contact_name=document.getElementById("name").value;
     var contact_number=document.getElementById("number").value;
     var contacts=JSON.parse(localStorage.getItem("contacts"));
-    
+    var random= Math.random().toString(36).substr(2,9);
+   
     var contact={
-        id:Math.random().toString(36).substr(2,9),
+        id:random,
         name:contact_name,
         number:contact_number
     }
@@ -42,5 +43,4 @@ function deletecontact(id){
     localStorage.setItem("contacts", JSON.stringify(contacts));
     location.reload();
     console.log(contacts);
-
 }

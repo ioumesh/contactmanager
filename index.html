@@ -21,16 +21,14 @@
                 <p class="contact_heading">Contact Manager</p>
             </div>
             <div class="contact_form">
-                <form action="">
-                    <input type="text" placeholder="Enter Contact Name">
-                    <input type="text" placeholder="Enter Phone Number">
+                <form onsubmit="submitcontact(event)">
+                    <input id="name" type="text" placeholder="Enter Contact Name">
+                    <input id="number" type="text" placeholder="Enter Phone Number" >
                     <button type="submit" class="btn">Add Contact</button>
                 </form>
             </div>
             <div class="contact_body">
-                <div class="contact_item">
-                    <i class="fas fa-user"></i>
-                </div>
+                
             </div>
         </div>
     </div>

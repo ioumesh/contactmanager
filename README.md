@@ -1,7 +1,7 @@
 # contactmanager
 ###  using Html, Css, and Javascript.
 
-![Theme Switcher](https://github.com/codersgyan/theme-switcher/blob/main/Web%201920%20%E2%80%93%20111-1.png)
+![Theme Switcher](https://github.com/ioumesh/contactmanager/blob/master/git.jpg)
 
 ### Demo
 demo link
